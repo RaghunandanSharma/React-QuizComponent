@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import QuizQuestionButton from "./QuizQuestionButton.js";
-import { throws } from "assert";
 class QuizQuestion extends Component {
   constructor(props) {
     super(props);
@@ -35,7 +34,7 @@ class QuizQuestion extends Component {
             )}
           </ul>
         </section>
-        {this.state.incorrectAnswer == true ? (
+        {this.state.incorrectAnswer === true ? (
           <p className="error">Sorry, that's not right</p>
         ) : null}
       </main>
